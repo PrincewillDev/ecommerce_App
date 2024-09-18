@@ -10,7 +10,8 @@ from django.utils import timezone
 from .forms import CheckoutForm, CouponForm, RefundForm
 from .models import Item, OrderItem, Order, BillingAddress, Payment, Coupon, Refund, Category
 from django.http import HttpResponseRedirect
-from django.shortcuts import render_to_response
+from django.shortcuts import render
+from django.http import request
 
 # Create your views here.
 import random
@@ -231,7 +232,7 @@ class CheckoutView(View):
 #     return render(request, "shop.html", context)
 
 
-@login_required
+# @login_required
 def add_to_cart(request, slug):
     item = get_object_or_404(Item, slug=slug)
     order_item, created = OrderItem.objects.get_or_create(
