@@ -25,7 +25,6 @@ Ecommerce website built with Django 2.2.3, Python 3.7.3, and bootstrap 4.
 `pip install -r requirements.txt`
 
 Install below version in terminal and 'New Version will face version conflict error'
-
 ```python
 
 pip install Django==2.2.4
