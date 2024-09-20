@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'crispy_forms',
-    'crispy_bootstrap4', #TeeCee added this
+    'crispy_bootstrap4', #TeeCee
     'django_countries',
     'core',  # Your custom app should be listed at the end or after core Django and third-party apps
 ]
