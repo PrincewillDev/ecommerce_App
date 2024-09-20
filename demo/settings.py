@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'crispy_forms',
+    'crispy_bootstrap4', #TeeCee added this
     'django_countries',
     'core',  # Your custom app should be listed at the end or after core Django and third-party apps
 ]
@@ -36,7 +37,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',  # Django's auth middleware
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',  # Required by allauth
+    #'allauth.account.middleware.AccountMiddleware',  # Required by allauth #TeeCee commented this out because Allauth does not require any middleware to be manually added to MIDDLEWARE
 ]
 
 
